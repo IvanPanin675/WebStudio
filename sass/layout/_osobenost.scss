@@ -1,0 +1,37 @@
+.osobenost {
+    width: 270px;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.osobenost__skils {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--headers-text-color);
+}
+
+.osobenost__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--sec-bg-color);
+    margin-bottom: 30px;
+}
+
+.osobenost__icon-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--headers-text-color);
+
+}

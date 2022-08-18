@@ -1,0 +1,23 @@
+.what-we-do {
+    position: relative;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.what-we-do__text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+
+    color: var(--bg-color);
+}
