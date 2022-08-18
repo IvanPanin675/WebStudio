@@ -15,29 +15,35 @@
     <header class="header-line">
         <div class="conteiner header-conteiner">
             <a href="" class="logo link">Web<span class="black">Studio</span></a>
-            <nav>
-                <ul class="list flex">
-                    <li class="item-nav"><a href="./index.html" class="link navi current">Студия</a></li>
-                    <li class="item-nav"><a href="./portfolio.html" class="link navi">Портфолио</a></li>
-                    <li class="item-nav"><a href="" class="link navi">Контакты</a></li>
+            <nav class="navigation">
+                <ul class="navigation__list list">
+                    <li class="navigation__item"><a href="./index.html" class="link navi current">Студия</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="link navi">Портфолио</a></li>
+                    <li class="navigation__item"><a href="" class="link navi">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list flex">
-                <li class="item-kont"><a href="mailto:info@devstudio.com" class="link kont">
+            <ul class="kontact-list list">
+                <li class="kontact-list__item"><a href="mailto:info@devstudio.com" class="link kont">
                     <svg width="16" height="12">
                         <use href="./image/icon.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
                 </li>        
-                <li class="item-kont"><a href="tel:+380961111111" class="link kont">
+                <li class="kontact-list__item"><a href="tel:+380961111111" class="link kont">
                     <svg width="12" height="16">
                         <use href="./image/icon.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
                 </li>        
             </ul>
+            <!-- <button type="button" class="header-btn"> -->
+                <svg class="header-menu" width="18" height="18">
+                    <use href="./image/icon.svg#icon-menu"></use>
+                    <use href="./image/icon.svg#icon-close"></use>
+                </svg>
+            <!-- </button> -->
         </div>
     </header>
-    
-    <main class="main-main">
+
+    <!-- <main class="main-main">
 
         <!--герой-->
         <section class="section-hero">
