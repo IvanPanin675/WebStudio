@@ -1,8 +1,32 @@
 .osobenost {
-    width: 270px;
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
 
-    &:not(:first-child) {
-        margin-left: 30px;
+
+
+
+.osobenost__item {
+    width: 100%;
+
+    @media screen and (max-width:767px) {
+        &:not(last-child) {
+            margin-bottom: 30px;
+        }
+    }
+      
+    @media screen and (min-width:768px) {
+        width: calc((100% - 30px) / 2);
+
+    }
+    
+    @media screen and (min-width:1200px) {
+        width: 270px;
     }
 }
 
@@ -16,6 +40,10 @@
     text-transform: uppercase;
 
     color: var(--headers-text-color);
+
+    @media screen and (max-width:767px) {
+        text-align: center;    
+    }
 }
 
 .osobenost__icon {
