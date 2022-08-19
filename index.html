@@ -24,12 +24,12 @@
             </nav>
             <ul class="kontact-list list">
                 <li class="kontact-list__item"><a href="mailto:info@devstudio.com" class="link kont">
-                    <svg width="16" height="12">
+                    <svg class="kont__svg-envelope">
                         <use href="./image/icon.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
                 </li>        
                 <li class="kontact-list__item"><a href="tel:+380961111111" class="link kont">
-                    <svg width="12" height="16">
+                    <svg class="kont__svg-smartphone">
                         <use href="./image/icon.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
                 </li>        
@@ -103,9 +103,9 @@
         <section class="section">
             <div class="conteiner">
                 <h2 class="podzagolovok">Наша команда</h2>
-                <ul class="list flex">
-                    <li class="teamer">
-                        <img src="./image/nh1.jpg" alt="Фото Игорь Демьяненко" width="270">
+                <ul class="team list">
+                    <li class="team__item">
+                        <img class="team__img" src="./image/nh1.jpg" alt="Фото Игорь Демьяненко" width="270">
                         <div class="teamer-div">
                             <h3 class="teamer__name">Игорь Демьяненко</h3>
                             <p lang="en" class="teamer__prof">Product Designer</p>
@@ -141,8 +141,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="teamer">
-                        <img src="./image/nh2.jpg" alt="Фото Ольга Репина" width="270">
+                    <li class="team__item">
+                        <img class="team__img" src="./image/nh2.jpg" alt="Фото Ольга Репина" width="270">
                         <div class="teamer-div">
                             <h3 class="teamer__name">Ольга Репина</h3>
                             <p lang="en" class="teamer__prof">Frontend Developer</p>
@@ -178,8 +178,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="teamer">
-                        <img src="./image/nh3.jpg" alt="Фото Николай Тарасов" width="270">
+                    <li class="team__item">
+                        <img class="team__img" src="./image/nh3.jpg" alt="Фото Николай Тарасов" width="270">
                         <div class="teamer-div">
                             <h3 class="teamer__name">Николай Тарасов</h3>
                             <p lang="en" class="teamer__prof">Marketing</p>
@@ -215,8 +215,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="teamer">
-                        <img src="./image/nh4.jpg" alt="Фото Михаил Ермаков" width="270">
+                    <li class="team__item">
+                        <img class="team__img" src="./image/nh4.jpg" alt="Фото Михаил Ермаков" width="270">
                         <div class="teamer-div">
                             <h3 class="teamer__name">Михаил Ермаков</h3>
                             <p lang="en" class="teamer__prof">UI Designer</p>
@@ -322,40 +322,40 @@
                 </ul>
             </address>
             </div>
-            <div>
+            <div class="join">
                 <p class="footer-text">присоединяйтесь</p>
-                <ul class="footer-list list">
-                    <li class="footer-list-item">
-                        <a href="" class="footer-list-link">
-                            <svg class="footer-list-icon" width="20" height="20">
+                <ul class="join__list list">
+                    <li class="join__list-item">
+                        <a href="" class="join__link">
+                            <svg class="join__link-icon" width="20" height="20">
                                 <use href="./image/icon.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-list-item">
-                        <a href="" class="footer-list-link">
-                            <svg class="footer-list-icon" width="20" height="20">
+                    <li class="join__list-item">
+                        <a href="" class="join__link">
+                            <svg class="join__link-icon" width="20" height="20">
                                 <use href="./image/icon.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-list-item">
-                        <a href="" class="footer-list-link">
-                            <svg class="footer-list-icon" width="20" height="20">
+                    <li class="join__list-item">
+                        <a href="" class="join__link">
+                            <svg class="join__link-icon" width="20" height="20">
                                 <use href="./image/icon.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-list-item">
-                        <a href="" class="footer-list-link">
-                            <svg class="footer-list-icon" width="20" height="20">
+                    <li class="join__list-item">
+                        <a href="" class="join__link">
+                            <svg class="join__link-icon" width="20" height="20">
                                 <use href="./image/icon.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="footer__subscribe">
                 <p class="footer-text">Подпишитесь на рассылку</p>
                 <div class="footer-div-for-form">
                     <form class="footer-form">

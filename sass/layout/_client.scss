@@ -1,8 +1,9 @@
 .client-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
@@ -10,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -23,6 +24,14 @@
     &:hover,
     &:focus {
         border-color: var(--Logo-bt-link);
+    }
+
+    @media screen and (min-width:768px){
+        width: 226px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
     }
 }
 

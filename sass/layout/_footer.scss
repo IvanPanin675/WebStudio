@@ -1,7 +1,20 @@
 .footer .conteiner {
-    display: flex;
-    gap: 70px;
-    align-items: baseline;
+    
+    
+    @media screen and (max-width:1199px) {
+        text-align: center;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;  
+        flex-wrap: wrap;
+        // gap: 165px;
+        
+    }
+
+
 }
 
 .footer {
@@ -25,22 +38,36 @@
     margin-top: 9px;
 }
 
+.item-addr {
+    &:not(:first-child) {
+        margin-top: 8px;
+    }
+}
+
 .link.addr {
+    
     color: rgba(255, 255, 255, 0.6);
     
     &:not(:first-child) {
         margin-top: 9px;
     }
+
+
 }
 
+.join {
+    @media screen and (max-width:767px) {
+        margin-top: 60px;
+    }
 
-
-
-.footer-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-left: 165px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+        margin-right: 93px;
+    }
 }
 
 .footer-text {
@@ -53,7 +80,15 @@
     color: #FFFFFF;
 }
 
-.footer-list-link {
+
+.join__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.join__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,8 +109,16 @@
 }
 
 
-.footer-list-icon {
+.join__link-icon {
     fill: #ffffff;
+}
+
+.footer__subscribe {
+    @media screen and (max-width:1199px) {
+        margin-top: 60px;
+    }
+
+    
 }
 
 .footer-div-for-form {
@@ -83,10 +126,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+
+    
 }
 
 .footer-form {
-    display: flex;
+    width: 100%;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+    
 
 }
 
@@ -104,7 +154,9 @@
     padding-bottom: 15px;
     padding-left: 16px;
     outline: none;
-    width: 358px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
     height: 50px;
     background-color: inherit;
     color: var(--bg-color);
@@ -124,6 +176,14 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
+    @media screen and (min-width:768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
+
 }
 
 
@@ -132,8 +192,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media screen and (min-width:1200px) {
+        margin-left: 12px;
+    }
+
+    @media screen and (max-width:1199px) {
+        margin-top: 20px;
+    }
 }
 
 .footer-span-send {

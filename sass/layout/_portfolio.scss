@@ -1,9 +1,28 @@
-.main-port {
-    margin-top: 80px;
+.portfolio__list-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+
+    @media screen and (min-width:768px) {
+        justify-content: center;
+    }
+    
 }
 
-.item-btn:not(:first-child) {
-    margin-left: 8px;
+.portfolio__list-compani {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.main-port {
+    margin-top: 60px;
+
+    @media screen and (min-width:768px) {
+        margin-top: 80px;
+    }
 }
 
 .item-sait .link {
