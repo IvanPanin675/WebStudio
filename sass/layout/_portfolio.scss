@@ -13,7 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
+    // justify-content: center;
     margin-top: 40px;
 }
 
@@ -22,6 +22,12 @@
 
     @media screen and (min-width:768px) {
         margin-top: 80px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .item-sait {
+        width: 354px;
     }
 }
 
