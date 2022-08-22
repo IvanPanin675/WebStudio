@@ -1228,6 +1228,7 @@ img {
 }
 .item-sait .link {
   display: block;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1292,6 +1293,11 @@ img {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .block-saits {
+    height: calc(100% - 294px);
+  }
 }
 
 .saits {
