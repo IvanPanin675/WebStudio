@@ -19,8 +19,8 @@
 .header-conteiner {
     display: flex;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     @media screen and (min-width:768px) {
         padding-top: 0px;
@@ -58,20 +58,14 @@
     margin-left: 50px;
 }
 
-.header-menu {
-    margin-left: auto;
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-}
 
 
 .navi {
     color: var(--headers-text-color);
     font-weight: 500;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 28px;
+    padding-bottom: 28px;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -91,23 +85,28 @@
 
 
 
-.link.current {
-    position: relative;
-    display: block;
+.current {
+    
     color: var(--Logo-bt-link);
 
-
-    &::after {
-        content: '';
+    @media screen and (min-width:768px) {
+        position: relative;
         display: block;
-        position: absolute;
-        height: 4px;
-        border-radius: 2px;
-        bottom: 8px;
-        width: 100%;
+    
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 4px;
+            border-radius: 2px;
+            bottom: 0px;
+            width: 100%;
 
-        background-color: var(--Logo-bt-link);
+            background-color: var(--Logo-bt-link);
+        }
     }
+
+    
 }
 
 .kontact-list {
@@ -152,8 +151,8 @@
     }
 
     @media screen and (min-width:1200px) {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 28px;
+        padding-bottom: 28px;
     }
 
     @media screen and (max-width:1199px){
@@ -184,4 +183,29 @@
 .kont>svg {
     margin-right: 10px;
 }
+
+
+
+.header__btn {
+    background-color: var(--bg-color);
+    border: none;
+    padding: 0;
+    line-height: 0;
+    margin-left: auto;
+    cursor: pointer;
+    
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover .header__btn-menu {
+        fill: var(--Logo-bt-link);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+
 

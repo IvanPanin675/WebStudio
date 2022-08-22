@@ -34,12 +34,35 @@
                     </svg>+38 096 111 11 11</a>
                 </li>        
             </ul>
-            <!-- <button type="button" class="header-btn"> -->
-                <svg class="header-menu" width="18" height="18">
+            <button type="button" class="header__btn" data-menu-open>
+                <svg class="header__btn-menu" width="40" height="40">
                     <use href="./image/icon.svg#icon-menu"></use>
-                    <use href="./image/icon.svg#icon-close"></use>
                 </svg>
-            <!-- </button> -->
+            </button>
+        </div>
+        <div class="mobail-menu" data-menu>
+            <div class="mobail-container">
+                <ul class="mobail__list-nav">
+                    <li class="list mobail__item-nav"><a class="link mobail__link-nav current" href="./index.html">Студия</a></li>
+                    <li class="list mobail__item-nav"><a class="link mobail__link-nav" href="./portfolio.html">Портфолио</a></li>
+                    <li class="list mobail__item-nav"><a class="link mobail__link-nav" href="">Контакты</a></li>
+                </ul>
+                <ul class="mobail__list-kontact">
+                    <li class="list mobail__item-kontact"><a class="link mobail__link-kontact-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="list mobail__item-kontact"><a class="link mobail__link-kontact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobail__list-social">
+                    <li class="list mobail__item-social"><a class="link mobail__link-social" href="">Instagram</a></li>
+                    <li class="list mobail__item-social"><a class="link mobail__link-social" href="">Twitter</a></li>
+                    <li class="list mobail__item-social"><a class="link mobail__link-social" href="">Facebook</a></li>
+                    <li class="list mobail__item-social"><a class="link mobail__link-social" href="">LinkedIn</a></li>
+                </ul>
+                <button type="button" class="mobail-menu__btn" data-menu-close>
+                    <svg class="mobail-menu__svg" width="18.67" height="18.67">
+                        <use href="./image/icon.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -465,6 +488,7 @@
         </div>
     </div>
 
+    <script src="./js/mobail-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
